@@ -6,46 +6,32 @@
 \bibliography{papers}
 
 % Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
-\def\theme{MidnightBlue}
+\def\theme{RedViolet}
 
 % More predefined colors can be found in 
 % https://en.wikibooks.org/wiki/LaTeX/Colors
 
 \usepackage{simplecv}
 
-\boldname{Cetin}{Doruk}{D.}
+\usepackage{ragged2e}
+
+\boldname{Andrade}{Acácio}{A.}
 
 \begin{document}
 
 % Heading
-\headinginline{Doruk Çetin}{
-    Website: \website{dcetin.me} \\ 
-    Email: \email{dcetin@ethz.ch} \\
-    % LinkedIn: \linkedin{doruk-cetin} \\
-    GitHub: \github{dcetin}
+\headinginline{Acácio Andrade}{
+    % Website: \website{acac-io.github.io} \\
+    \github{acac-io} \\
+    % LinkedIn: \linkedin{acácio-andrade-2423ba156} \\
+    \email{acaciotda@gmail.com} \\
 }
-
-% \headingphoto{Doruk Çetin}{
-%     Website: \website{dcetin.me} \\ 
-%     Email: \email{dcetin@ethz.ch} \\
-%     % LinkedIn: \linkedin{doruk-cetin} \\
-%     GitHub: \github{dcetin}
-% }{photo.png}
 
 % Page One
 \import{sections/}{education.tex}
 \import{sections/}{experience.tex}
-\import{sections/}{publications.tex}
-
-\pagebreak
-
-% Page Two
-\import{sections/}{teaching.tex}
 \sidebyside
     {\import{sections/}{skills.tex}}
     {\import{sections/}{languages.tex}}
-\import{sections/}{projects.tex}
-\import{sections/}{awards.tex}
-\import{sections/}{volunteering.tex}
 
 \end{document}
